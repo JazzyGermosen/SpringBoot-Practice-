@@ -3,15 +3,15 @@ package com.pluralsight.NorthWindTradersSpringBoot;
 public class Product {
 
     private int productId;
-    private String name;
-    private String category;
-    private double price;
+    private String productName;
+    private int categoryId;
+    private double unitPrice;
 
-    public Product(int productId, String name, String category, double price) {
+    public Product(int productId, String productName, int categoryId, double unitPrice) {
         this.productId = productId;
-        this.name = name;
-        this.category = category;
-        this.price = price;
+        this.productName = productName;
+        this.categoryId = categoryId;
+        this.unitPrice = unitPrice;
     }
 
     public int getProductId() {
@@ -22,27 +22,27 @@ public class Product {
         this.productId = productId;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public String getCategory() {
-        return category;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
-    public double getPrice() {
-        return price;
+    public double getUnitPrice() {
+        return unitPrice;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setUnitPrice(double unitPrice) {
+        this.unitPrice = unitPrice;
     }
 }

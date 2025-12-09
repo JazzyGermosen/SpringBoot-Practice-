@@ -1,6 +1,7 @@
-package com.pluralsight.NorthWindTradersSpringBoot;
+package com.pluralsight.NorthWindTradersSpringBoot.dao;
 
 public interface ProductDao {
+
 
     public static void addProduct(){
 
