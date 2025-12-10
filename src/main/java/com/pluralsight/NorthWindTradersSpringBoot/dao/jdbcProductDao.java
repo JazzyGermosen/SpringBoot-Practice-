@@ -58,6 +58,26 @@ public class jdbcProductDao implements ProductDao{
     @Override
     public void getAll(){
 
+        String sql = """
+               
+               Select
+                 *
+               From 
+                 Products
+                """;
+
+        try(
+                // creating the connection between the database and using a prepared statement
+                Connection conn = dataSource.getConnection();
+                PreparedStatement statement = conn.prepareStatement(sql)
+        ){
+
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
     }
 
